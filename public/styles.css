@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  #loginContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #loginForm,
+  form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 8px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  #inventoryContainer {
+    display: none;
+    margin-top: 50px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  form input[name="name"],
+  form input[name="quantity"],
+  form input[name="price"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card p {
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .delete-btn,
+  .quantity-btn {
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #ff5a5a;
+  }
+  
+  .quantity-btn {
+    background-color: #333;
+    margin-right: 5px;
+  }
+  
+  .delete-btn:hover,
+  .quantity-btn:hover {
+    background-color: #555;
+  }
+  
+  .quantity {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  

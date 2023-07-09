@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gas Station Inventory Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/shadocss/dist/shadow.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/shadocss/dist/shadow.dark.min.css">
+</head>
+<body>
+  <div id="loginContainer">
+    <h1>Gas Station Inventory Management</h1>
+    <form id="loginForm">
+      <div class="form-group">
+        <input type="password" class="form-control" id="passwordInput" placeholder="Enter password" required />
+        <i class="far fa-eye-slash" id="togglePassword"></i> <!-- Show Password Button -->
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+
+  <div id="inventoryContainer" style="display: none;">
+    <div class="search-container">
+      <input type="text" id="searchBar" class="form-control" placeholder="Search Item">
+    </div>
+    <form id="addForm">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Item Name" required />
+        </div>
+        <div class="col">
+          <input type="number" name="quantity" class="form-control" placeholder="Quantity" required />
+        </div>
+        <div class="col">
+          <input type="number" name="price" class="form-control" placeholder="Price" required />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Add Item</button>
+        </div>
+      </div>
+    </form>
+    <div id="inventory"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
